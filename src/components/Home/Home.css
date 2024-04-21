@@ -1,0 +1,147 @@
+section{
+    position: relative;
+    width: 100%;
+    background-image: url(/public/images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.color a{
+  text-decoration: none;
+ 
+}
+.home {
+  background-image: url(/public/images/img4.png);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+ text-align: right;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(230, 214, 230);
+} 
+ 
+.headerContainer {
+    width: auto;
+    margin-right:30px;
+    margin-top: 250px;
+  }
+  .carousel-inner img,
+  .img{
+    height: 595px
+  }
+  .home .headerContainer h1 {
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color:white;
+    animation:slide-top 1s cubic-bezier(.25,.46,.45,.94) reverse both
+  }
+
+  @media only screen and (min-width: 200px) and (max-width: 567px){
+
+    .home {
+        justify-content: center;
+        align-items: center;
+      }
+      .headerContainer{
+        margin-left: 23px;
+        border-radius: 10px;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(77,0,75);
+        color: white;
+        margin-bottom: 200px;
+      }
+      .home .headerContainer h1 {
+        font-size: 40px;
+        height: 30px;
+        margin: 30px 0px;
+        color: white;
+      }
+     
+      .container{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+      }
+      .carousel-inner img,
+      .img{
+        height: 380px
+      }
+  }
+
+  @keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-100px)}}
+  .home .headerContainer p {
+    margin-top: 15px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: lighter;
+    color:white;
+  }
+  .headerContainer button {
+    background-color: rgb(77,0,75);
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .headerContainer button{
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    color: rgb(77,0,75);
+  }
+section .wave{
+    position: absolute;
+    width: 100%;
+    height:143px;
+    bottom: 0;
+    left: 0;
+    background: url(/public/images/wave-line.png);
+    animation: animate 10s linear infinite;
+
+}
+
+section .wave:before{
+    content: '';
+    width: 100%;
+    height: 143px;
+    background: url(/public/images/wave-line.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    animation: animate-reverse 10s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1360px;
+    }
+}
+@keyframes animate-reverse{
+    0%{
+        background-position: 1360px;
+    }
+    100%{
+        background-position: 0;
+    }
+}

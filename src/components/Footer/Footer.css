@@ -1,0 +1,10 @@
+nav a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.ul li{
+    cursor: pointer;
+}
+.text-gray-500:hover{
+ color: blue;
+}

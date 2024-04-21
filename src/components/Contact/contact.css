@@ -1,0 +1,33 @@
+.bgImage{
+    background-image: url(/public/images/contact.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+  }
+  .bgImg{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    justify-items: center;
+    padding-top: 100px;
+  }
+ 
+  .callbg{
+    background-image:url(/public/images/callimg.png) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   height: 400px;
+  }
+  
+    @media only screen and (min-width:200px) and (max-width:767px){
+ 
+        .bgImage{
+            height: 200px;
+        }
+        .bgImg{
+            padding-top: 70px;
+        }
+      }

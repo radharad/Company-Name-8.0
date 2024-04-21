@@ -1,0 +1,28 @@
+.Aboutus{
+    width: 100%;
+   padding-bottom: 50px;
+  }
+  .About{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .Gift{
+    flex-basis: 23%;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 3px lightgray;
+    background: white;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  @media only screen and (min-width:200px) and (max-width:767px){
+    .About{
+      width: 100%;
+      flex-direction: column;
+    }
+    .Gift{
+      margin: 10px;
+    }
+  }

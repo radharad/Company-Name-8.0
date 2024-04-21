@@ -1,0 +1,24 @@
+.color a{
+    color: white;
+    position: relative;
+}
+.color a:hover{
+    color: orange;
+}
+.color a::after{
+ content: "";
+ position: absolute;
+ left: 0;
+ bottom: -5px;
+ height: 3px;
+ width: 0%;
+ background-color: white;
+ transition: all ease 1s;
+}
+.color a:hover::after{
+    width: 100%;
+   
+}
+.decoration-none a:hover{
+    text-decoration: none;
+}

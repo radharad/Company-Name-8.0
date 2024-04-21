@@ -1,0 +1,126 @@
+.Recording{
+    width: 100%;
+   padding-bottom: 50px;
+  }
+  .Recorder{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .Record{
+    flex-basis: 23%;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 3px lightgray;
+    background: white;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .bg-color{
+    overflow: hidden;
+  }
+.income{
+    text-align: center;
+    align-items: center;
+    width: "1170px";
+}
+
+.training-section{
+    width: 100%;
+   padding-bottom: 50px;
+  }
+  .container{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .training-items{
+    flex-basis: 23%;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 3px lightgray;
+   
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+  .training-items img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
+  .training-items h3{
+    padding: 10px 0px;
+    font-size: 25px;
+    font-weight:bold;
+  }
+  .training-items p{
+    font-size: 14px;
+    padding: 10px;
+  }
+ 
+  .blurry{
+    background-image: url(/public/images/blurry-team.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+  }
+  .boxes{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    width: 500px;
+    justify-content: center;
+    position: absolute;
+    top:50px;
+    left:400px
+  }
+.boxes button{
+  color: white;
+  padding:7px 15px;
+ margin: 5px ;
+  border-radius: 5px;
+  background-color:rgb(77,0,75)
+}
+
+.Business{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  justify-items: center;
+  padding-top: 100px;
+}
+.callbg{
+  background-image:url(/public/images/callimg.png) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ height: 400px;
+ 
+}
+  @media only screen and (min-width:200px) and (max-width:767px){
+    .Recorder{
+      width: 100%;
+      flex-direction: column;
+    }
+    .Record{
+      margin: 10px;
+    }
+    .container{
+      width: 100%;
+      flex-direction: column;
+      }
+      .training-items{
+      margin: 10px;
+      }
+   
+      .Business{
+        padding-top: 70px;
+      }
+  }
